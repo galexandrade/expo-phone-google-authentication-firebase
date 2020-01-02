@@ -1,0 +1,23 @@
+[ignore]
+
+[include]
+./src/.*
+
+[libs]
+node_modules/react-native/Libraries/react-native/react-native-interface.js
+node_modules/react-native/flow
+
+[lints]
+
+[options]
+; Extensions
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.css
+module.file_ext=.scss
+
+[strict]
+
+[untyped]
+.*/node_modules/react-native

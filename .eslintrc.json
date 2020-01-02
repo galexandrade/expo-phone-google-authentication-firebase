@@ -1,0 +1,51 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "__DEV__": true,
+        "jest/globals": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-native",
+        "flowtype",
+        "prettier",
+        "jest"
+    ],
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended", 
+        "plugin:flowtype/recommended", 
+        "prettier",
+        "prettier/flowtype",
+        "prettier/react",
+        "prettier/standard",
+        "plugin:jest/recommended"
+    ],
+    "rules": {
+        "max-lines": ["error", 400],
+        "camelcase": ["error", { "properties": "never" }],
+        "function": "off",
+        "react-native/no-unused-styles": 2,
+        "react-native/split-platform-components": 2,
+        "react/display-name": "off",
+        "prettier/prettier": "error",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    }
+}
